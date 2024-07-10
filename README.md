@@ -28,7 +28,7 @@ This API allows users to track their collection and consumption of coffee beans,
 
 ## Project Structure
 
-- `/coffee-tracker`
+- `/coffee-tracker-express-api`
   - `/configs`       *Configuration files (e.g., DB connection)*
   - `/controllers`   *Controller files*
   - `/models`        *Mongoose models*
@@ -38,6 +38,7 @@ This API allows users to track their collection and consumption of coffee beans,
   - `main.js`        *Application entry point*
   - `package.json`   *Project dependencies*
   - `.gitignore`     *Files to be ignored by Git*
+  - `.env`           *Add environment variables*
 
 ## Dependencies
 _**TODO**: Security and Swagger packages to be added._
@@ -58,7 +59,8 @@ _**TODO**: Security and Swagger packages to be added._
 ### Coffee Beans
 - `GET /beans` - Get all coffee beans
 - `POST /beans` - Add a new coffee bean
-- `PUT /beans/:id` - Update a coffee bean
+- `GET /beans/:id` - Get a single coffee bean
+- `PATCH /beans/:id` - Update a coffee bean
 - `DELETE /beans/:id` - Delete a coffee bean
 
 
