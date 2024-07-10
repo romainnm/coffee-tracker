@@ -70,9 +70,9 @@ npm install && npm start
 ```
 
 ## DEV tasks
-1. Create app structure
-2. Add dependencies
-3. Set basic server
+1. Create app structure - DONE
+2. Add dependencies - DONE
+3. Set basic server - DONE
 4. Set connection to DB + .env to manage secret var
 5. Configure router and routes
 6. Initialize beans controllers
