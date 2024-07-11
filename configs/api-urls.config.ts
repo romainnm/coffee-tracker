@@ -1,4 +1,6 @@
-const URLS = {
+import { IURLs } from '../interfaces';
+
+const URLs: IURLs = {
     ROOT: '/api/v1',
     AUTH: {
         BASE: '/auth',
@@ -10,4 +12,4 @@ const URLS = {
     },
 }
 
-export default URLS;
+export default URLs;

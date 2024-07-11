@@ -2,14 +2,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import express from 'express';
-import connectDB from './configs/connect-db';
-import AppRouter from './routes/main';
-import URLS from './configs/api-urls';
+import connectDB from './configs/connect-db.config';
+import AppRouter from './routes/main.router';
+import URLs from './configs/api-urls.config';
 
 const app = express();
 
 // Set Router 
-app.use(URLS.ROOT, AppRouter);
+app.use(URLs.ROOT, AppRouter);
 
 const run = async () => {
     // TODO: configure PORT in .env - default port 3000

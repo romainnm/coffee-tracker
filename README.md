@@ -68,7 +68,7 @@ _**TODO**: Security and Swagger packages to be added._
 
 ## Get started
 ```bash
-npm install && npm start
+npm install && npm run dev
 ```
 
 ## DEV tasks
@@ -77,12 +77,12 @@ npm install && npm start
 3. Set basic server - DONE
 4. Set connection to DB + .env to manage secret var - DONE
 5. Configure router and routes - DONE
-  5.1 - IMPORTANT: set linting, test and TypeScript before going further - DONE; 
-  5.2 - Test ESLint and TypeScript
-6. Initialize beans endpoints controllers
-7. Initialize auth endpoints controllers
-8. Configure endpoints + Postman
-9. Set error handling - Request and Server errors
+6. - Set linting, test and TypeScript - DONE; 
+   - Test ESLint and fix TypeScript
+7. Initialize beans endpoints controllers
+8. Initialize auth endpoints controllers
+9. Configure endpoints + Postman
+10. Set error handling - Request and Server errors
 
 
 
