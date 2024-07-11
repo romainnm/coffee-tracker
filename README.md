@@ -135,5 +135,5 @@ npm install && npm run dev
 ### Prettier installation
 
 -   npm install prettier eslint-config-prettier eslint-plugin-prettier --save-dev
-- Update package.json script
-- add .prettierrc
+-   Update package.json script
+-   add .prettierrc
