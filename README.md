@@ -50,6 +50,8 @@ _**TODO**: Security and Swagger packages to be added._
 
 ### Dev Dependencies
 - Nodemon
+- TypeScript (npm install typescript ts-node @types/node --save-dev && npx tsc --init)
+- ESLint (npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev && npx eslint --init)
 
 ## Endpoints
 ### Authentication
@@ -75,7 +77,8 @@ npm install && npm start
 3. Set basic server - DONE
 4. Set connection to DB + .env to manage secret var - DONE
 5. Configure router and routes - DONE
-5. IMPORTANT: set linting, test and TypeScript before going further; 
+  5.1 - IMPORTANT: set linting, test and TypeScript before going further - DONE; 
+  5.2 - Test ESLint and TypeScript
 6. Initialize beans endpoints controllers
 7. Initialize auth endpoints controllers
 8. Configure endpoints + Postman

@@ -10,4 +10,4 @@ const URLS = {
     },
 }
 
-module.exports = URLS;
+export default URLS;

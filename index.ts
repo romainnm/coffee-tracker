@@ -1,11 +1,12 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
-const express = require('express');
+import express from 'express';
+import connectDB from './configs/connect-db';
+import AppRouter from './routes/main';
+import URLS from './configs/api-urls';
+
 const app = express();
-
-const connectDB = require('./configs/connect-db');
-const AppRouter = require('./routes/main')
-const URLS = require('./configs/api-urls');
 
 // Set Router 
 app.use(URLS.ROOT, AppRouter);
@@ -15,7 +16,7 @@ const run = async () => {
     const port = process.env.PORT || 3000;
 
     try {
-        await connectDB(process.env.MONGO_URI);
+        await connectDB(process.env.MONGO_URI as string);
 
         app.listen(port, ()=>{
             console.log(`Server listening on ${port}`);
