@@ -1,15 +1,15 @@
-import { IURLs } from '../interfaces';
+import { IURLs } from "../interfaces";
 
 const URLs: IURLs = {
-    ROOT: '/api/v1',
+    ROOT: "/api/v1",
     AUTH: {
-        BASE: '/auth',
-        PATHS: ['/login', '/register'], 
+        BASE: "/auth",
+        PATHS: ["/login", "/register"],
     },
     COFFEE: {
-        BASE: '/coffee',
-        PARAMS: ['/:id']
+        BASE: "/coffee",
+        PARAMS: ["/:id"],
     },
-}
+};
 
 export default URLs;

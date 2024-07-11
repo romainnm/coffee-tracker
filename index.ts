@@ -1,14 +1,14 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
-import express from 'express';
-import connectDB from './configs/connect-db.config';
-import AppRouter from './routes/main.router';
-import URLs from './configs/api-urls.config';
+import express from "express";
+import connectDB from "./configs/connect-db.config";
+import AppRouter from "./routes/main.router";
+import URLs from "./configs/api-urls.config";
 
 const app = express();
 
-// Set Router 
+// Set Router
 app.use(URLs.ROOT, AppRouter);
 
 const run = async () => {
@@ -18,15 +18,12 @@ const run = async () => {
     try {
         await connectDB(process.env.MONGO_URI as string);
 
-        app.listen(port, ()=>{
+        app.listen(port, () => {
             console.log(`Server listening on ${port}`);
-        })
+        });
     } catch (error) {
-        console.log(error);    
+        console.log(error);
     }
 };
 
 run();
-
-
-
