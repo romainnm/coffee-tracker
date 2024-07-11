@@ -92,8 +92,9 @@ npm install && npm run dev
 5. Configure router and routes - DONE
 6.  - Set Linting and TypeScript - DONE;
     - Fix ESLint and TypeScript errors - DONE
-    - Set Prettier
-    - Configure testing?
+    - Set Prettier - DONE
+    - Set CICD pipeline - DONE
+    - Initialize testing (Trying Jest) - DONE
 7. Initialize beans endpoints controllers
 8. Initialize auth endpoints controllers
 9. Configure endpoints + Postman
