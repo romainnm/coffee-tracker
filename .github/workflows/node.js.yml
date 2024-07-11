@@ -17,6 +17,8 @@ jobs:
     steps:
         - name: "☁️ checkout repository"
           uses: actions/checkout@v2
+          with:
+            node-version: '16'
   
         - name: "🔧 setup node"
           uses: actions/setup-node@v2.1.5
@@ -24,7 +26,7 @@ jobs:
             node-version: '16'
   
         - name: "🔧 npm install"
-          run: npm install --force
+          run: npm install
   
         - name: "🔍 lint code"
           run: npm run lint
@@ -35,6 +37,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+            node-version: '16'
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -42,7 +46,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install --force
+        run: npm install
 
       - name: Run Prettier
         run: npm run prettier:check
