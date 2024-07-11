@@ -11,8 +11,8 @@ on:
 
 jobs:
   lint:
-    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev'
     timeout-minutes: 10
     steps:
         - name: "☁️ checkout repository"
@@ -21,10 +21,28 @@ jobs:
         - name: "🔧 setup node"
           uses: actions/setup-node@v2.1.5
           with:
-            node-version: 18
+            node-version: '16'
   
         - name: "🔧 npm install"
           run: npm install --force
   
         - name: "🔍 lint code"
           run: npm run lint
+  prettier:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev'
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Prettier
+        run: npm run prettier:check
