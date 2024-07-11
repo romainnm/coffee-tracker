@@ -75,10 +75,13 @@ npm install && npm start
 3. Set basic server - DONE
 4. Set connection to DB + .env to manage secret var - DONE
 5. Configure router and routes - DONE
+5. IMPORTANT: set linting, test and TypeScript before going further; 
 6. Initialize beans endpoints controllers
 7. Initialize auth endpoints controllers
 8. Configure endpoints + Postman
 9. Set error handling - Request and Server errors
+
+
 
 
 
