@@ -24,7 +24,7 @@ jobs:
             node-version: 18
   
         - name: "🔧 npm install"
-          run: npm install
+          run: npm install --force
   
         - name: "🔍 lint code"
           run: npm run lint
