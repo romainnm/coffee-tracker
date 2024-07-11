@@ -45,4 +45,4 @@ jobs:
         run: npm install --force
 
       - name: Run Prettier
-        run: npm run format
+        run: npm run prettier:check
