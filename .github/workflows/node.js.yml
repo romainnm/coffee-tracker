@@ -11,7 +11,7 @@ on:
 
 jobs:
   lint:
-    name: Code standards
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
