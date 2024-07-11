@@ -86,6 +86,33 @@ npm install && npm run dev
 
 
 
+## Troubleshooting / MEMO
 
+### TypeScript installation
+- npm install typescript ts-node @types/node @types/express --save-dev
+- npx tsc --init (creates a tsconfig.json)
+- (optinonal) Update project structure
+- Update package.json scripts 
+  - run in dev with "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  - build with "build": "tsc"
+  - start the built app with "start": "node dist/index.js",
+- Change all imports (if target changed to es2016, etc)
+
+### ESLint installation
+- npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+- npx eslint --init? (Note: there are different format of config .eslintrc.json, eslint.config.mjs. Here the one generated was a mjs)
+- Configure rules
+- Update package.json scripts 
+- run lint - "lint": "eslint ."
+- (optional) Add successful linting message
+
+### Nodemon installation
+- npm install nodemon typescript ts-node @types/node --save-dev
+- create a nodemon.json (not necessary?)
+- change the dev script - "dev": "nodemon",
+
+### Fix Dotenv linting issues
+- "process" and "console" not recognized (ESLint does not recognized Node.js global variables)
+- globals: globals.node (Add this line to include Node.js globals in eslint.config.mjs)
 
 
