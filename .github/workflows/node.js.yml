@@ -16,12 +16,12 @@ jobs:
     timeout-minutes: 10
     steps:
         - name: "☁️ checkout repository"
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
   
         - name: "🔧 setup node"
-          uses: actions/setup-node@v3
+          uses: actions/setup-node@v4
           with:
-            node-version: 16
+            node-version: 20
   
         - name: "🔧 npm install"
           run: npm install
@@ -34,12 +34,12 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
