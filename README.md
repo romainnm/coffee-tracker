@@ -105,8 +105,8 @@ npm run prettier:fix
     - Set Prettier - DONE
     - Set CICD pipeline - DONE
     - Initialize testing (Trying Jest) - DONE
-7. Initialize beans endpoints controllers
-8. Initialize auth endpoints controllers
+7. Initialize beans endpoints controllers - DONE
+8. Initialize auth endpoints controllers - DONE
 9. Configure endpoints + Postman
 10. Set error handling - Request and Server errors
 
