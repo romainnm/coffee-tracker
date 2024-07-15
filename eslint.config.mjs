@@ -4,7 +4,7 @@ import tseslint from "@typescript-eslint/eslint-plugin";
 import parser from "@typescript-eslint/parser";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
-import jestPlugin from 'eslint-plugin-jest';
+import jestPlugin from "eslint-plugin-jest";
 
 export default [
     {
