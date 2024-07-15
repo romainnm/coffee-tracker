@@ -1,7 +1,7 @@
 # Coffee Tracker (Node/Express API)
 
 **Branches:**
-main: https://github.com/romainnm/coffee-tracker-express-api 
+main: https://github.com/romainnm/coffee-tracker-express-api
 dev: https://github.com/romainnm/coffee-tracker-express-api/tree/dev
 
 ## Table of Contents
@@ -55,7 +55,6 @@ This API allows users to track their collection and consumption of coffee beans,
     -   `jest.config.ts` _Jest configuration_
     -   `.prettierrc` _Prettier configuration_
     -   `tsconfig.json` _TypeScript configuration_
-
 
 ## Dependencies
 
