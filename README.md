@@ -1,8 +1,9 @@
 # Coffee Tracker (Node/Express API)
 
 **Branches:**
-- main: https://github.com/romainnm/coffee-tracker-express-api
-- dev: https://github.com/romainnm/coffee-tracker-express-api/tree/dev
+
+-   main: https://github.com/romainnm/coffee-tracker-express-api
+-   dev: https://github.com/romainnm/coffee-tracker-express-api/tree/dev
 
 ## Table of Contents
 
@@ -126,7 +127,7 @@ npm run prettier:fix
 7. ~~Initialize beans endpoints controllers~~ - DONE
 8. ~~Initialize auth endpoints controllers~~ - DONE
 9. ~~Create collection + Configure endpoints in Postman~~ - DONE
-10. Set error handling - Request and Server errors + 404 errors
+10. ~~Set error handling - Request and Server errors + 404 errors~~ - DONE
 11. Write unit test for controllers
 12. Initialize Mongoose and create Schemas
 

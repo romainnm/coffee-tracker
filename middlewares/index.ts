@@ -1,2 +1,3 @@
 // Middlewares Barrel File
-export * from "./notFound.middleware";
+export * from "./notFoundHandler.middleware";
+export * from "./serverErrorHandler.middleware";
