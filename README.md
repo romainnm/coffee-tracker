@@ -95,19 +95,19 @@ npm run prettier:fix
 
 ## DEV tasks
 
-1. Create app structure - DONE
-2. Add dependencies - DONE
-3. Set basic server - DONE
-4. Set connection to DB + .env to manage secret var - DONE
-5. Configure router and routes - DONE
-6.  - Set Linting and TypeScript - DONE;
-    - Fix ESLint and TypeScript errors - DONE
-    - Set Prettier - DONE
-    - Set CICD pipeline - DONE
-    - Initialize testing (Trying Jest) - DONE
-7. Initialize beans endpoints controllers - DONE
-8. Initialize auth endpoints controllers - DONE
-9. Configure endpoints + Postman
+1. ~~Create app structure~~ - DONE
+2. ~~Add dependencies~~ - DONE
+3. ~~Set basic server~~ - DONE
+4. ~~Set connection to DB + .env to manage secret var~~ - DONE
+5. ~~Configure router and routes~~ - DONE
+6.  - ~~Set Linting and TypeScript~~ - DONE;
+    - ~~Fix ESLint and TypeScript errors~~ - DONE
+    - ~~Set Prettier~~ - DONE
+    - ~~Set CICD pipeline~~ - DONE
+    - ~~Initialize testing (Trying Jest)~~ - DONE
+7. ~~Initialize beans endpoints controllers~~ - DONE
+8. ~~Initialize auth endpoints controllers~~ - DONE
+9. ~~Create collection + Configure endpoints in Postman~~ - DONE
 10. Set error handling - Request and Server errors
 
 ## Troubleshooting / MEMO
