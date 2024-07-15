@@ -4,6 +4,7 @@ import tseslint from "@typescript-eslint/eslint-plugin";
 import parser from "@typescript-eslint/parser";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
+import jestPlugin from 'eslint-plugin-jest';
 
 export default [
     {
@@ -19,6 +20,7 @@ export default [
         plugins: {
             "@typescript-eslint": tseslint,
             prettier: prettierPlugin,
+            jest: jestPlugin,
         },
         rules: {
             ...pluginJs.configs.recommended.rules,

@@ -115,6 +115,7 @@ npm run prettier:fix
 8. ~~Initialize auth endpoints controllers~~ - DONE
 9. ~~Create collection + Configure endpoints in Postman~~ - DONE
 10. Set error handling - Request and Server errors
+11. Initialize Mongoose and create Schemas
 
 ## Troubleshooting / MEMO
 
