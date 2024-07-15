@@ -33,16 +33,25 @@ This API allows users to track their collection and consumption of coffee beans,
 ## Project Structure
 
 -   `/coffee-tracker-express-api`
+    -   `.github` _Github pipeline config_
     -   `/configs` _Configuration files (e.g., DB connection)_
     -   `/controllers` _Controller files_
+    -   `/interfaces` _Interface files_
     -   `/models` _Mongoose models_
     -   `/routes` _Route definitions_
+    -   `/tests` _Jest Unit Tests files_
     -   `/middlewares` _Middleware functions (e.g., error handling)_
+    -   `/mocks` _Mocks files for testing and UI integration_
     -   `/utils` _Utility functions (optional)_
     -   `main.js` _Application entry point_
     -   `package.json` _Project dependencies_
     -   `.gitignore` _Files to be ignored by Git_
     -   `.env` _Add environment variables_
+    -   `.eslint.config.mjs` _ESLint configuration_
+    -   `jest.config.ts` _Jest configuration_
+    -   `.prettierrc` _Prettier configuration_
+    -   `tsconfig.json` _TypeScript configuration_
+
 
 ## Dependencies
 
