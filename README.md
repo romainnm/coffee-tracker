@@ -78,16 +78,22 @@ _**TODO**: Security and Swagger packages to be added._
 -   `DELETE /beans/:id` - Delete a coffee bean
 
 ## Usage
+
 ### Start application in local
+
 ```bash
 npm install && npm run dev
 ```
+
 ### Check linting with ESLint
+
 ```bash
 npm run lint
 npm run lint:success (optional)
 ```
+
 ### Check formating with Prettier
+
 ```bash
 npm run prettier:check
 npm run prettier:fix
