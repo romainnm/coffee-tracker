@@ -2,23 +2,23 @@ import { Request, Response } from "express";
 import { MockCoffeeBags } from "../mocks";
 import { asyncWrapper } from "../utils";
 
-const getAllCoffeeBags = asyncWrapper((req: Request, res: Response) => {
+const getAllCoffeeBags = asyncWrapper(async (req: Request, res: Response) => {
     res.status(200).json(MockCoffeeBags);
 });
 
-const createCoffeeBag = asyncWrapper((req: Request, res: Response) => {
+const createCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
     res.status(201).send("Coffee created");
 });
 
-const getCoffeeBag = asyncWrapper((req: Request, res: Response) => {
+const getCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
     res.status(200).json(MockCoffeeBags[0]);
 });
 
-const updateCoffeeBag = asyncWrapper((req: Request, res: Response) => {
+const updateCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
     res.status(200).send("Coffee info updated");
 });
 
-const deleteCoffeeBag = asyncWrapper((req: Request, res: Response) => {
+const deleteCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
     res.status(200).send("Coffee deleted");
 });
 
