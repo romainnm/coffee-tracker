@@ -24,7 +24,10 @@ export default [
             ...pluginJs.configs.recommended.rules,
             ...tseslint.configs.recommended.rules,
             ...prettierConfig.rules,
-            "prettier/prettier": ["error", { tabWidth: 4, useTabs: false }],
+            "prettier/prettier": [
+                "error",
+                { tabWidth: 4, useTabs: false, endOfLine: "auto" },
+            ],
         },
     },
     {
