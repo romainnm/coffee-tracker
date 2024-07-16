@@ -128,8 +128,9 @@ npm run prettier:fix
 8. ~~Initialize auth endpoints controllers~~ - DONE
 9. ~~Create collection + Configure endpoints in Postman~~ - DONE
 10. ~~Set error handling - Request and Server errors + 404 errors~~ - DONE
-11. Write unit test for controllers
+11. ~~Write unit test for Coffee controllers~~ - DONE
 12. Initialize Mongoose and create Schemas
+13. Write unit test for Auth Controller
 
 ## Troubleshooting / MEMO
 
