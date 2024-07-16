@@ -48,6 +48,7 @@ This API allows users to track their collection and consumption of coffee beans,
     -   `/middlewares` _Middleware functions (e.g., error handling)_
     -   `/mocks` _Mocks files for testing and UI integration_
     -   `/utils` _Utility functions (optional)_
+    -   `/enums` _Enum files_
     -   `main.js` _Application entry point_
     -   `package.json` _Project dependencies_
     -   `.gitignore` _Files to be ignored by Git_
