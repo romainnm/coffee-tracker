@@ -5,7 +5,7 @@ import {
     createCoffeeBag,
     getCoffeeBag,
     updateCoffeeBag,
-    deleteCoffeeBag
+    deleteCoffeeBag,
 } from "../controllers/coffee.controller";
 import URL from "../configs/api-urls.config";
 import { MockCoffeeBags } from "../mocks";
