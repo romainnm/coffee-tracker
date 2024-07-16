@@ -10,6 +10,23 @@ on:
     branches: [ "main" ]
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "🔧 setup node"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: "🔧 npm install"
+        run: npm install
+
+      - name: "🔍 run tests"
+        run: npm run test
   lint:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/dev'
