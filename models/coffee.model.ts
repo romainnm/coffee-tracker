@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { ICoffeeBag } from "../interfaces";
+import { CoffeeStatus } from "../enums";
 
 const CoffeeBagSchema = new mongoose.Schema<ICoffeeBag>({
     name: {
@@ -17,10 +18,14 @@ const CoffeeBagSchema = new mongoose.Schema<ICoffeeBag>({
     status: {
         type: String,
         enum: {
-            values: ["new", "in progress", "finished"],
+            values: [
+                CoffeeStatus.NEW,
+                CoffeeStatus.IN_PROGRESS,
+                CoffeeStatus.FINISHED,
+            ],
             message: "{VALUE} is not supported",
         },
-        default: "new",
+        default: CoffeeStatus.NEW,
     },
     archived: {
         type: Boolean,
