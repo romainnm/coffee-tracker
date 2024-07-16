@@ -138,7 +138,7 @@ npm run prettier:fix
 11. ~~Write unit test for Coffee controllers~~ - DONE
 12. ~~Initialize Mongoose and create Schemas~~ - DONE
 13. Write unit test for Auth Controller
-_New Tasks will be documented in the Issues section_
+    _New Tasks will be documented in the Issues section_
 
 ## Troubleshooting / MEMO
 
