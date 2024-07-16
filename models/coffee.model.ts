@@ -18,6 +18,7 @@ const CoffeeBagSchema = new mongoose.Schema<ICoffeeBag>({
         type: String,
         enum: {
             values: ["new", "in progress", "finished"],
+            message: "{VALUE} is not supported",
         },
         default: "new",
     },
