@@ -5,15 +5,18 @@ import { CoffeeStatus, CoffeeValidationMsg } from "../enums";
 const CoffeeBagSchema = new mongoose.Schema<ICoffeeBag>({
     name: {
         type: String,
-        required: [true, `name ${CoffeeValidationMsg.PROVIDED}`],
+        required: [true, `name ${CoffeeValidationMsg.MUST_PROVIDE}`],
         trim: true,
-        maxlength: [30, `name ${CoffeeValidationMsg.LIMITED} to 30 chars`],
+        maxlength: [30, `name ${CoffeeValidationMsg.CHAR_LIMITED} to 30 chars`],
     },
     brand: {
         type: String,
-        required: [true, `brand ${CoffeeValidationMsg.PROVIDED}`],
+        required: [true, `brand ${CoffeeValidationMsg.MUST_PROVIDE}`],
         trim: true,
-        maxlength: [30, `brand ${CoffeeValidationMsg.LIMITED} to 30 chars`],
+        maxlength: [
+            30,
+            `brand ${CoffeeValidationMsg.CHAR_LIMITED} to 30 chars`,
+        ],
     },
     status: {
         type: String,
@@ -23,7 +26,7 @@ const CoffeeBagSchema = new mongoose.Schema<ICoffeeBag>({
                 CoffeeStatus.IN_PROGRESS,
                 CoffeeStatus.FINISHED,
             ],
-            message: `{VALUE} ${CoffeeValidationMsg.SUPPORTED}`,
+            message: `{VALUE} ${CoffeeValidationMsg.NOT_SUPPORTED}`,
         },
         default: CoffeeStatus.NEW,
     },
