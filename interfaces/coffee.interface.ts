@@ -1,8 +1,9 @@
 export interface ICoffeeBag {
     name: string;
     brand: string;
-    status: string; // "new, in progress, finished"
+    status: string;
     archived: boolean;
+    createdAt?: string;
 }
 
 export interface ICoffeeBags extends Array<ICoffeeBag> {}
