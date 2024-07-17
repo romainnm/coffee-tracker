@@ -1,25 +1,37 @@
 import { Request, Response } from "express";
-import { MockCoffeeBags } from "../mocks";
 import { asyncWrapper } from "../utils";
+import { CoffeeBagModel } from "../models";
 
 const getAllCoffeeBags = asyncWrapper(async (req: Request, res: Response) => {
-    res.status(200).json(MockCoffeeBags);
+    const coffeeBags = await CoffeeBagModel.find({});
+    res.status(200).json({ data: coffeeBags });
 });
 
 const createCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
-    res.status(201).send("Coffee created");
+    const coffeeBag = await CoffeeBagModel.create(req.body);
+    res.status(201).json({ data: coffeeBag });
 });
 
 const getCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
-    res.status(200).json(MockCoffeeBags[0]);
+    const _id = req.params.id;
+    const coffeeBag = await CoffeeBagModel.findOne({ _id });
+    res.status(200).json({ data: coffeeBag });
 });
 
 const updateCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
-    res.status(200).send("Coffee info updated");
+    const _id = req.params.id;
+    const coffeeBag = await CoffeeBagModel.findOneAndUpdate({ _id }, req.body);
+    if (coffeeBag) {
+        res.status(200).json({ msg: `${coffeeBag.name} has been updated!` });
+    }
 });
 
 const deleteCoffeeBag = asyncWrapper(async (req: Request, res: Response) => {
-    res.status(200).send("Coffee deleted");
+    const _id = req.params.id;
+    const coffeeBag = await CoffeeBagModel.findOneAndDelete({ _id });
+    if (coffeeBag) {
+        res.status(200).json({ msg: `${coffeeBag.name} has been deleted!` });
+    }
 });
 
 export {

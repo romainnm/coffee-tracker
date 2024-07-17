@@ -6,4 +6,6 @@ export interface ICoffeeBag {
     createdAt?: string;
 }
 
-export interface ICoffeeBags extends Array<ICoffeeBag> {}
+export interface ICoffeeBags {
+    data: ICoffeeBag[];
+}
