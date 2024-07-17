@@ -8,6 +8,7 @@ import { notFoundHandler, serverErrorHandler } from "./middlewares";
 import URLs from "./configs/api-urls.config";
 
 const app = express();
+app.use(express.json()); // Needed to read req.body in controller
 
 // Set Router
 app.use(URLs.ROOT, AppRouter);
