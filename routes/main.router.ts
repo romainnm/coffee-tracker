@@ -9,6 +9,7 @@ import {
     deleteCoffeeBag,
 } from "../controllers/coffee.controller";
 import { login, register } from "../controllers/auth.controller";
+import { authMiddleware } from "../middlewares/auth.middleware";
 
 // Auth Routes
 const AuthLogin = URL.AUTH.BASE + URL.AUTH.PATHS[0]; // /auth/login
@@ -19,7 +20,7 @@ const Coffee = URL.COFFEE.BASE; // /coffee
 const CoffeeParamsID = URL.COFFEE.BASE + URL.COFFEE.PARAMS[0]; // /coffee/:id
 
 // Router
-router.route(AuthLogin).post(login);
+router.route(AuthLogin).post(authMiddleware, login);
 router.route(AuthRegister).post(register);
 router.route(Coffee).get(getAllCoffeeBags).post(createCoffeeBag);
 router
