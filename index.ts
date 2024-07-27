@@ -3,7 +3,7 @@ dotenv.config();
 
 import express from "express";
 import connectDB from "./configs/connect-db.config";
-import AppRouter from "./routes/main.router";
+import { AuthRouter, CoffeeRouter } from "./routes";
 import { notFoundHandler, serverErrorHandler } from "./middlewares";
 import URLs from "./configs/api-urls.config";
 
@@ -11,7 +11,8 @@ const app = express();
 app.use(express.json()); // Needed to read req.body in controller
 
 // Set Router
-app.use(URLs.ROOT, AppRouter);
+app.use(URLs.ROOT + URLs.AUTH.BASE, AuthRouter);
+app.use(URLs.ROOT + URLs.COFFEE.BASE, CoffeeRouter);
 
 // Set Middleware
 app.use(notFoundHandler);
