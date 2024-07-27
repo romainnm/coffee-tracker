@@ -11,7 +11,7 @@ import {
 
 // Router
 CoffeeRouter.route("/").get(getAllCoffeeBags).post(createCoffeeBag);
-CoffeeRouter.route(URL.COFFEE.PARAMS[0])
+CoffeeRouter.route(URL.COFFEE.PARAMS[0]) // /:id
     .get(getCoffeeBag)
     .patch(updateCoffeeBag)
     .delete(deleteCoffeeBag);
